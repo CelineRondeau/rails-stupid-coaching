@@ -1,0 +1,14 @@
+<h1>Ask</h1>
+
+<ol>
+  <% @questions.each do |question| %>
+    <li><%= question %></li>
+  <% end %>
+</ol>
+
+<h2>Ask a Question</h2>
+
+<form action="/answer" method="get">
+  <input type="text">
+  <input type="submit">
+</form>
